@@ -11,6 +11,7 @@ import HomeWorldScreen from '../screens/HomeWorldScreen'
 const config = Platform.select({
   web: { headerMode: 'screen' },
   default: {},
+
 });
 
 const HomeStack = createStackNavigator(
@@ -34,6 +35,17 @@ HomeStack.navigationOptions = {
       }
     />
   ),
+  tabBarOptions: {
+    style: {
+      backgroundColor: '#1e1e1e',
+    }
+  },
+    header: {
+      style: {
+        backgroundColor: '#1e1e1e',
+      },
+      title: 'Home'
+  }
 };
 
 HomeStack.path = '';

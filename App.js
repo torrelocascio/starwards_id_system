@@ -2,7 +2,7 @@ import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import React, { useState } from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View, Image, ImageBackground } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import AppNavigator from './navigation/AppNavigator';
@@ -21,6 +21,7 @@ export default function App(props) {
   } else {
     return (
       <View style={styles.container}>
+        
         {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
         <AppNavigator />
       </View>
@@ -59,4 +60,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  backgroundImage: {
+    flex: 1,
+    width: '100%',
+    height: '100%'
+  }
 });
