@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import TabBarIcon from '../components/TabBarIcon';
 import PersonScreen from '../screens/PersonScreen';
-import VehiclesScreen from '../screens/VehiclesScreen';
+import ShipScreen from '../screens/ShipScreen';
 import HomeWorldScreen from '../screens/HomeWorldScreen'
 
 const config = Platform.select({
@@ -17,7 +17,7 @@ const config = Platform.select({
 const HomeStack = createStackNavigator(
   {
     Person: PersonScreen,
-    Vehicles: VehiclesScreen,
+    Ship: ShipScreen,
     HomeWorld: HomeWorldScreen
   },
   config

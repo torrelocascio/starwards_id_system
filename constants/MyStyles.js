@@ -11,6 +11,9 @@ const color = {
     t1: '#000000', //white
     t2: '#3f3f3f', //dark gray
     t3: '#4501c1', //darker purple
+    cb1: 'rgba(104, 104, 104, .5)',
+    cb2: 'rgba(63, 63, 63, .5)',
+    cb3: 'rgba(43, 43, 43,.5)'
 }
 
 images = {
@@ -19,7 +22,7 @@ images = {
 }
 
 const header = {
-    headerTintColor: '#4501c1',
+    headerTintColor: 'white',
     headerStyle: {
       backgroundColor: color.b3,
       borderBottomColor: color.b2,
